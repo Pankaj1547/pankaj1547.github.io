@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KidTube Studio</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+         color: #1c1b22; background: #fbfaf8; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 2rem; margin: 0 0 .3em; letter-spacing: -.02em; }
+  h2 { font-size: 1.15rem; margin: 2.2em 0 .5em; }
+  .lede { font-size: 1.1rem; color: #4a4854; margin: 0 0 2em; }
+  ul { padding-left: 1.2em; }
+  li { margin: .35em 0; }
+  code { background: #efedea; padding: .12em .4em; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3em; padding-top: 1.4em; border-top: 1px solid #e3e0db;
+           color: #6b6877; font-size: .92rem; }
+  a { color: #2f5bd0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>KidTube Studio</h1>
+  <p class="lede">A personal command-line tool that renders videos on my own computer
+  and uploads them to my own YouTube channels.</p>
+
+  <h2>What it is</h2>
+  <p>KidTube Studio is a private automation tool. It generates two kinds of video and
+  publishes them on a schedule:</p>
+  <ul>
+    <li>Hindi nursery rhymes and children's songs, animated from a local rhyme bank.</li>
+    <li>Generative physics simulations &mdash; marble races, falling sand, plinko drops,
+        hydraulic-press crushes and territory-growth simulations.</li>
+  </ul>
+  <p>Everything is rendered locally with <code>ffmpeg</code>, <code>numpy</code> and
+  <code>Pillow</code>. Nothing is scraped, reposted or taken from anyone else.</p>
+
+  <h2>Who can use it</h2>
+  <p>It is used by one person &mdash; its author &mdash; to manage their own YouTube
+  channels. It is not a product, it is not offered to other people, and it has no
+  sign-up. There is no server: it runs on a single desktop computer.</p>
+
+  <h2>What it connects to</h2>
+  <p>It uses the YouTube Data API to upload videos and set their titles, descriptions
+  and tags, and the YouTube Analytics API to read view and retention figures for those
+  same videos. It signs in as the channel owner through Google OAuth, and it only ever
+  touches that one account.</p>
+
+  <h2>Privacy</h2>
+  <p>The tool collects no data from anyone. See the
+  <a href="privacy.html">privacy policy</a> for the detail.</p>
+
+  <footer>
+    Personal project. Contact: see the support email on the Google consent screen.
+  </footer>
+</div>
+</body>
+</html>
